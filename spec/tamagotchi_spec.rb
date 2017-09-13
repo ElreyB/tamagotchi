@@ -36,6 +36,12 @@ describe(Tamagotchi) do
     end
   end
 
+  describe('set_awake') do
+    it ("returns whether tama is awake") do
+      expect(tama.set_awake(12)).to(eq(true))
+      expect(tama.set_awake(23)).to(eq(false))
+    end
+  end
 
   describe('#to_s') do
     it ("will return user friendly string with current tama status") do
