@@ -50,6 +50,13 @@ describe(Tamagotchi) do
     end
   end
 
+  describe('pet_tama') do
+    it ("increases happiness_level by 1 when select pet") do
+      tama.set_happiness_level
+      expect{tama.pet_tama}.to change{tama.happiness_level}.from(9).to(10)
+    end
+  end
+
   describe('#to_s') do
     it ("will return user friendly string with current tama status") do
       expect(tama.to_s).to(eq("Your tama, puggle, levels are food: 10 and happiness 10, and they are awake: true"))

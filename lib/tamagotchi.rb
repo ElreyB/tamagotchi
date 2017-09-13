@@ -38,7 +38,11 @@ class Tamagotchi < Clock
 
   def feed_tama
     @food_level += 1
-  end  
+  end
+
+  def pet_tama
+    @happiness_level += 1
+  end 
 
   def to_s
     "Your tama, #{@name}, levels are food: #{@food_level} and happiness #{@happiness_level}, and they are awake: #{@awake}"
