@@ -1,13 +1,14 @@
 require('pry')
 
 class Tamagotchi < Clock
-  attr_accessor(:name, :food_level, :happiness_level, :awake)
+  attr_accessor(:name, :food_level, :happiness_level, :awake, :light)
   attr_reader(:clock)
   def initialize(name)
     @name = name
     @food_level = 10
     @happiness_level = 10
     @awake = true
+    @light = true
     @clock = Clock.new
   end
 
@@ -42,7 +43,15 @@ class Tamagotchi < Clock
 
   def pet_tama
     @happiness_level += 1
-  end 
+  end
+
+  def light_switch
+    if @light == true
+      @light = false
+    elsif @light == false
+      @light = true
+    end
+  end
 
   def to_s
     "Your tama, #{@name}, levels are food: #{@food_level} and happiness #{@happiness_level}, and they are awake: #{@awake}"
