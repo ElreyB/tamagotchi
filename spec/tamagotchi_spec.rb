@@ -19,7 +19,7 @@ describe(Tamagotchi) do
     end
 
     it ("is dead if the food level is 0") do
-      tama.set_food_level() #Need to do further work (timer)
+      10.times{tama.set_food_level()}
       expect(tama.is_alive?()).to(eq(false))
     end
   end
