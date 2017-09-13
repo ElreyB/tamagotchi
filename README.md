@@ -17,22 +17,30 @@ _This app will recreate the functionality of the toy phenomenon of the 2000s, Ta
 
 ## Specifications
 
-* _Check status returns information about tama's hunger, happiness, and wakefulness._
-* Example input: click button A
-* Example output: "hunger: 1, happiness: 3, wakefulness: true"
-* _Increase hunger meter when click button B when selecting food_
-* Example input: select food, click button
+* _Sets the name and life levels of a new Tamagotchi._
+* Example input: [my_pet.name, my_pet.food_level, my_pet.happiness_level, my_pet.awake?]
+* Example output: ["puggle", 10, 10, true]
+* _Select life to see if My Pet is alive._
+* Example input: hunger: 0
+* Example output: dead
+* Example input: hunger: 10
+* Example output: alive
+* _Select stats to view My Pet's food, happiness, and wakefulness._
+* Example input: select stats
+* Example output: [hunger: 1, happiness: 3, wakefulness: true]
+* _Increase food meter when select food._
+* Example input: select food
 * Example output: hunger: 2
-* _Increase happiness meter when click button B when selecting play_
-* Example input: select play, click button
+* _Increase happiness meter when select play._
+* Example input: select play
 * Example output: happiness: 4
-* _Switch the lights when click button B when selecting light_
+* _Switch lights when select light_
 * Example input: select light, click button
 * Example output: lights off
-* _Decrease hunger meter by 1 every 60 minutes_
+* _Decrease hunger meter by 1 every 30 minutes_
 * Example input: 12:00, 3
 * Example output: 1:00, 2
-* _Decrease happiness meter by 1 every 30 minutes_
+* _Decrease happiness meter by 1 every 15 minutes_
 * Example input: 12:00, 2
 * Example output: 1:00, 1
 * _Change wakefulness every 12 hours_
