@@ -25,9 +25,20 @@ _This app will recreate the functionality of the toy phenomenon of the 2000s, Ta
 * Example output: dead
 * Example input: hunger: 10
 * Example output: alive
-<!-- * _Select stats to view My Pet's food, happiness, and wakefulness._
+* _Select stats to view My Pet's food, happiness, and wakefulness._
 * Example input: select stats
-* Example output: [hunger: 1, happiness: 3, wakefulness: true] -->
+* Example output: [hunger: 1, happiness: 3, wakefulness: true]
+* _Decrease hunger meter by 1 every 3 hours_
+* Example input: 12:00, 3
+* Example output: 15:00, 2
+* _Decrease happiness meter by 1 every 4 hours_
+* Example input: 12:00, 2
+* Example output: 16:00, 1
+* _Change wakefulness every 12 hours_
+* Example input: 08:00
+* Example output: true
+* Example input: 20:00
+* Example output: false
 * _Increase food meter when select food._
 * Example input: select food
 * Example output: hunger: 2
@@ -37,17 +48,6 @@ _This app will recreate the functionality of the toy phenomenon of the 2000s, Ta
 * _Switch lights when select light_
 * Example input: select light, click button
 * Example output: lights off
-* _Decrease hunger meter by 1 every 30 minutes_
-* Example input: 12:00, 3
-* Example output: 1:00, 2
-* _Decrease happiness meter by 1 every 15 minutes_
-* Example input: 12:00, 2
-* Example output: 1:00, 1
-* _Change wakefulness every 12 hours_
-* Example input: 08:00
-* Example output: true
-* Example input: 20:00
-* Example output: false
 * _Return to homepage when click button C_
 * Example input: happiness: 4
 * Example output: homepage

@@ -21,6 +21,11 @@ class Tamagotchi < Clock
     end
   end
 
+  def set_happiness_level
+    if @clock.clock % 4 == 0
+      @happiness_level -= 1
+    end
+  end  
 
   def to_s
     "Your tama, #{@name}, levels are food: #{@food_level} and happiness #{@happiness_level}, and they are awake: #{@awake}"
