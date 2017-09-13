@@ -34,10 +34,10 @@ _This app will recreate the functionality of the toy phenomenon of the 2000s, Ta
 * _Decrease happiness meter by 1 every 4 hours_
 * Example input: 12:00, 2
 * Example output: 16:00, 1
-* _Change wakefulness every 12 hours_
-* Example input: 08:00
+* _Return awake status (changes every 12 hours)_
+* Example input: 12:00
 * Example output: true
-* Example input: 20:00
+* Example input: 23:00
 * Example output: false
 * _Increase food meter when select food._
 * Example input: select food
