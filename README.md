@@ -25,9 +25,9 @@ _This app will recreate the functionality of the toy phenomenon of the 2000s, Ta
 * Example output: dead
 * Example input: hunger: 10
 * Example output: alive
-* _Select stats to view My Pet's food, happiness, and wakefulness._
+<!-- * _Select stats to view My Pet's food, happiness, and wakefulness._
 * Example input: select stats
-* Example output: [hunger: 1, happiness: 3, wakefulness: true]
+* Example output: [hunger: 1, happiness: 3, wakefulness: true] -->
 * _Increase food meter when select food._
 * Example input: select food
 * Example output: hunger: 2
